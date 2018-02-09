@@ -1,0 +1,17 @@
+{
+    "name": "foxlaby/makedashboard",
+    "description": "Create a control panel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "karim mohamed",
+            "email": "komicho1996@gmail.com"
+        }
+    ],
+    "autoload": {
+		"psr-4": {
+			"FoxLaby\\": "/src"
+		}
+	}
+}
