@@ -1,14 +1,14 @@
-#makeDashboard
+# makeDashboard
 Create a control panel by laravel .. [UI used](https://github.com/komicho/sb-admin2-rtl)
 
-###Install via composer
+### Install via composer
 Add orm to composer.json configuration file.
 
 ```
 $ composer require foxlaby/makedashboard
 ```
 
-###add to file config/app.php
+### add to file config/app.php
 ```php
 'providers' => [
     ...
@@ -16,7 +16,7 @@ $ composer require foxlaby/makedashboard
 ],
 ```
 
-###publish 
+### publish 
 ```
 $ php artisan vendor:publish
 ```
@@ -25,7 +25,7 @@ OR
 $ php artisan vendor:publish --provider="FoxLaby\Support\ServiceProviderr"
 ```
 
-###Edit file  RouteServiceProvider.php
+### Edit file  RouteServiceProvider.php
 ```php
  public function map()
  {
