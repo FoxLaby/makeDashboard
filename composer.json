@@ -10,8 +10,15 @@
         }
     ],
     "autoload": {
-		"psr-4": {
-			"FoxLaby\\": "/src"
-		}
-	}
+        "psr-4": {
+            "FoxLaby\\": "/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FoxLaby\\Support\\ServiceProvider"
+            ]
+        }
+    }
 }
