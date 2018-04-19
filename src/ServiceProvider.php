@@ -11,6 +11,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             __DIR__ . '/files/admin' => 'resources/views/admin/',
             __DIR__ . '/files/src_admin' => 'public/src_admin/',
             __DIR__ . '/files/routes' => 'routes/',
+            __DIR__ . '/files/migrations' => 'database/migrations',
         ]);
     }
     
