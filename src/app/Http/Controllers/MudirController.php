@@ -1,6 +1,6 @@
 <?php
 
-namespace FoxLaby\App\Http\Controllers;
+namespace FoxLaby\Mudir\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 

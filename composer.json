@@ -1,5 +1,5 @@
 {
-    "name": "foxlaby/makedashboard",
+    "name": "foxlaby/mudir",
     "description": "Create a control panel",
     "type": "library",
     "license": "MIT",
@@ -11,13 +11,14 @@
     ],
     "autoload": {
         "psr-4": {
-            "FoxLaby\\": "/src"
+            "FoxLaby\\Mudir\\": "/src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "FoxLaby\\Support\\ServiceProvider"
+                "FoxLaby\\Mudir\\Support\\ServiceProvider",
+                "FoxLaby\\Mudir\\App\\Providers\\RouteServiceProvider"
             ]
         }
     }

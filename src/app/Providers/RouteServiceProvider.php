@@ -1,6 +1,6 @@
 <?php
 
-namespace FoxLaby\App\Providers;
+namespace FoxLaby\Mudir\App\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;

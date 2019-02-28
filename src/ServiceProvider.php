@@ -1,10 +1,9 @@
 <?php
 
-namespace FoxLaby\Support;
+namespace FoxLaby\Mudir\Support;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
-    
     public function boot()
     {
         $this->publishes([
@@ -17,5 +16,4 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
     }
-    
 }
