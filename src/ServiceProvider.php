@@ -10,6 +10,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             __DIR__.'/public' => public_path('vendor/mudir'),
         ], 'public');
 
+        $this->publishes([
+            __DIR__ . '/routes/publish' => 'routes/',
+            __DIR__ . '/resources/views/publish' => 'resources/views/mudir',
+        ]);
+
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         
         $this->loadViewsFrom(__DIR__.'/resources/views', 'mudir');
