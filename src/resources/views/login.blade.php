@@ -12,22 +12,22 @@
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ url('/') }}/src_admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('/vendor/mudir/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="{{ url('/') }}/src_admin/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="{{ asset('/vendor/mudir/css/plugins/metisMenu/metisMenu.min.css') }}" rel="stylesheet">
 
     <!-- Timeline CSS -->
-    <link href="{{ url('/') }}/src_admin/css/plugins/timeline.css" rel="stylesheet">
+    <link href="{{ asset('/vendor/mudir/css/plugins/timeline.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{{ url('/') }}/src_admin/css/sb-admin-2.css" rel="stylesheet">
+    <link href="{{ asset('/vendor/mudir/css/sb-admin-2.css') }}" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="{{ url('/') }}/src_admin/css/plugins/morris.css" rel="stylesheet">
+    <link href="{{ asset('/vendor/mudir/css/plugins/morris.css') }}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="{{ url('/') }}/src_admin/css/font-awesome/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ asset('/vendor/mudir/css/font-awesome/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,16 +72,16 @@
     </div>
 
     <!-- jQuery Version 1.11.0 -->
-    <script src="{{ url('/') }}/src_admin/js/jquery-1.11.0.js"></script>
+    <script src="{{ asset('/vendor/mudir/js/jquery-1.11.0.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{ url('/') }}/src_admin/js/bootstrap.min.js"></script>
+    <script src="{{ asset('/vendor/mudir/js/bootstrap.min.js') }}"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="{{ url('/') }}/src_admin/js/metisMenu/metisMenu.min.js"></script>
+    <script src="{{ asset('/vendor/mudir/js/metisMenu/metisMenu.min.js') }}"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="{{ url('/') }}/src_admin/js/sb-admin-2.js"></script>
+    <script src="{{ asset('/vendor/mudir/js/sb-admin-2.js') }}"></script>
 
 </body>
 

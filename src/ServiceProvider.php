@@ -8,11 +8,14 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/files/admin' => 'resources/views/admin/',
-            __DIR__ . '/files/src_admin' => 'public/src_admin/',
-            __DIR__ . '/files/routes' => 'routes/',
-            __DIR__ . '/files/migrations' => 'database/migrations',
-        ]);
+            __DIR__.'/public' => public_path('vendor/mudir'),
+        ], 'public');
+
+        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+        
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'mudir');
+
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
     }
     
 }
