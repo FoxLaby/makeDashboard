@@ -35,7 +35,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        Route::middleware('web')
+        Route::middleware(['web', 'auth', 'FoxLaby\Mudir\App\Http\Middleware\AdminMiddleware'])
             ->namespace($this->namespace)
             ->prefix(config('mudir.prefix'))
             ->group(base_path('routes/mudir.php'));
