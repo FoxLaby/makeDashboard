@@ -1,7 +1,7 @@
 <?php
 
 Route::group([
-    'prefix' => 'mudir',
+    'prefix' => config('mudir.prefix'),
     'namespace' => 'FoxLaby\Mudir\app\Http\Controllers',
     'middleware' => 'web'
 ], function () {

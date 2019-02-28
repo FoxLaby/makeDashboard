@@ -15,6 +15,8 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             __DIR__ . '/resources/views/publish' => 'resources/views/mudir',
         ]);
 
+        $this->mergeConfigFrom(__DIR__.'/config/config.php', 'mudir');
+
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         
         $this->loadViewsFrom(__DIR__.'/resources/views', 'mudir');

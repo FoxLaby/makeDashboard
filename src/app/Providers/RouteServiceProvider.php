@@ -37,7 +37,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::middleware('web')
             ->namespace($this->namespace)
-            ->prefix('mudir')
+            ->prefix(config('mudir.prefix'))
             ->group(base_path('routes/mudir.php'));
     }
 }
