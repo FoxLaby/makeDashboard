@@ -4,6 +4,25 @@ namespace FoxLaby\Mudir\Support;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
+    protected $commands = [
+        'FoxLaby\Mudir\Commands\AddAdmin',
+    ];
+
+    /**
+     * Register services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->commands($this->commands);
+    }
+
+    /**
+     * Bootstrap services.
+     *
+     * @return void
+     */
     public function boot()
     {
         $this->publishes([
