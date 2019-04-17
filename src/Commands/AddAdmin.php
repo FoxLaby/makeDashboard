@@ -7,7 +7,7 @@ use FoxLaby\Mudir\App\Models\Admin;
 
 class AddAdmin extends Command {
 
-    protected $signature = 'foxlaby:mudir:addAdmin {email}';
+    protected $signature = 'foxlaby:mudir:addadmin {email}';
 
     protected $description = 'Add a user to the administration by email .. but it should be located within the users table.';
 
