@@ -16,6 +16,12 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     public function register()
     {
         $this->commands($this->commands);
+
+        // Add functions by helper laravel
+        $fileHelper = __DIR__.'/helpers/Helper.php';
+        if (file_exists($fileHelper)) {
+            require_once($fileHelper);
+        }
     }
 
     /**
