@@ -9,26 +9,40 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>{{ config('app.name') }} - Mudir</title>
 
+    @if (config('mudir.direction') == 'rtl')
     <!-- Bootstrap Core CSS -->
-    <link href="{{ asset('/vendor/mudir/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/vendor/mudir/css/rtl/bootstrap.min.css') }}" rel="stylesheet">
 
+    <!-- not use this in ltr -->
+    <link href="{{ asset('/vendor/mudir/css/rtl/bootstrap.rtl.css') }}" rel="stylesheet">
+    @else
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ asset('/vendor/mudir/css/ltr/bootstrap.min.css') }}" rel="stylesheet">
+    @endif
     <!-- MetisMenu CSS -->
     <link href="{{ asset('/vendor/mudir/css/plugins/metisMenu/metisMenu.min.css') }}" rel="stylesheet">
 
     <!-- Timeline CSS -->
     <link href="{{ asset('/vendor/mudir/css/plugins/timeline.css') }}" rel="stylesheet">
 
+    @if (config('mudir.direction') == 'rtl')
     <!-- Custom CSS -->
-    <link href="{{ asset('/vendor/mudir/css/sb-admin-2.css') }}" rel="stylesheet">
-
+    <link href="{{ asset('/vendor/mudir/css/rtl/sb-admin-2.css') }}" rel="stylesheet">
+    @else
+    <!-- Custom CSS -->
+    <link href="{{ asset('/vendor/mudir/css/ltr/sb-admin-2.css') }}" rel="stylesheet">
+    @endif
     <!-- Morris Charts CSS -->
     <link href="{{ asset('/vendor/mudir/css/plugins/morris.css') }}" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="{{ asset('/vendor/mudir/css/font-awesome/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
 
+    @if (!empty(config('mudir.themes')))
+    <link href="{{ asset('/vendor/mudir/css/themes/'.config('mudir.themes').'.css') }}" rel="stylesheet" type="text/css">
+    @endif
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -51,7 +65,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="{{ route('mudir.home') }}">{{ config('app.name') }}</a>
             </div>
             <!-- /.navbar-header -->
 

@@ -30,11 +30,12 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         ], 'public');
 
         $this->publishes([
-            __DIR__ . '/routes/publish' => 'routes/',
-            __DIR__ . '/resources/views/publish' => 'resources/views/mudir',
+            __DIR__.'/routes/publish' => 'routes/',
+            __DIR__.'/resources/views/publish' => 'resources/views/mudir',
+            __DIR__.'/config/config.php' => config_path('mudir.php'),
         ]);
 
-        $this->mergeConfigFrom(__DIR__.'/config/config.php', 'mudir');
+        // $this->mergeConfigFrom(__DIR__.'/config/config.php', 'mudir');
 
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         
