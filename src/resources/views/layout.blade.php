@@ -40,6 +40,8 @@
     <!-- Custom Fonts -->
     <link href="{{ asset('/vendor/mudir/css/font-awesome/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
 
+    <link href="{{ asset('/vendor/mudir/css/styles.css') }}" rel="stylesheet" type="text/css">
+
     @if (!empty(config('mudir.themes')))
     <link href="{{ asset('/vendor/mudir/css/themes/'.config('mudir.themes').'.css') }}" rel="stylesheet" type="text/css">
     @endif
