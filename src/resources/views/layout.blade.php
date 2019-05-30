@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name') }} - Mudir</title>
 
@@ -310,6 +311,14 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="{{ asset('/vendor/mudir/js/sb-admin-2.js') }}"></script>
+    <script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    </script>
+    @yield('scripts')
 
 </body>
 
