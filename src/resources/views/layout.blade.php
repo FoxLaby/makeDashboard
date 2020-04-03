@@ -52,6 +52,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.{{ url('/') }}/src_admin/js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    @stack('styles')
 
 </head>
 
@@ -111,7 +112,8 @@
         }
     });
     </script>
-    @yield('scripts')
+    
+    @stack('scripts')
 
 </body>
 
